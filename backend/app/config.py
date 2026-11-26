@@ -18,6 +18,7 @@ ALLOWED_ORIGINS = [
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+USE_MOCK = os.getenv("USE_MOCK", "false").strip().lower()
 
 MODEL_PATH = os.getenv("MODEL_PATH", "artifacts/model.pt")
 LABELS_PATH = os.getenv("LABELS_PATH", "artifacts/labels.json")

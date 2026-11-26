@@ -31,5 +31,8 @@ Open http://localhost:5173.
 npm run build
 ```
 
+## Demo mode
+If `USE_MOCK=true` or no valid `GEMINI_API_KEY` is set (or if the Gemini call fails), the backend returns a sample Tomato Early Blight result so the app still works.
+
 ## Note
 The diagnosis uses the Gemini API. Never commit `.env` or API keys.
